@@ -6,7 +6,7 @@ import streamlit as st
 
 @st.cache_data
 def load_icms_matrix():
-    return pd.read_excel('.\origemdestino.xlsx', index_col=0)
+    return pd.read_excel('origemdestino.xlsx', index_col=0)
 icms_matrix = load_icms_matrix()
 
 print(icms_matrix.head())
